@@ -1,7 +1,11 @@
 @import "Ginkgo";
 @import "bootstrap/bootstrap";
 
-$bg-color: #F3EEEB;
+$bg-color: #F3EEEB; // 背景色
+$main-color: #B3876C; // 主咖啡色
+$sec-color: #E8DED2; // 淺咖啡
+$link-color: #97684F; // read more
+$orange-color: #FF978B; // 橘色
 
 * {
   &, &:after, &:before {
@@ -23,7 +27,7 @@ body {
 
   margin: 0;
   padding: 0;
-  color: black;
+  color: #433E3B;
   
   font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
@@ -44,4 +48,178 @@ a {
 button {
   outline: 0;
   border-width: 0;
+}
+
+.bg-main {background-color: $main-color;}
+.bg-sec {background-color: $sec-color;}
+.bg-link {background-color: $link-color;}
+.bg-orange {background-color: $orange-color;}
+
+.test {
+  height: 500px;
+}
+
+
+.bigBoxs {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reserveBoxs {
+  width: 100%;
+  max-height: 190px;
+  padding: 20px;
+  @include border-radius(3px);
+  overflow: hidden;
+  background-image: url(../images/reserve-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  background-color: $main-color;
+}
+
+
+// link
+.link-a {
+  color: white;
+  &:hover, &:active {
+    color: $orange-color;
+  }
+}
+
+.btn-o-line {
+  display: inline-block;
+  border: 1px solid $orange-color;
+  @include border-radius(3px);
+  color: $orange-color;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &:hover, &:active {
+    background-color: $orange-color;
+    color: white;
+  }
+}
+
+.btn-o {
+  display: inline-block;
+  @include border-radius(3px);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: $orange-color;
+
+  &:hover, &:active {
+    background-color: $orange-color;
+    color: white;
+  }
+}
+
+
+// space
+.top95 {
+  padding-top: 95px;
+}
+
+
+// menu多層選單
+nav {
+  font-size: 1.2rem;
+  color: $main-color;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+
+    li {
+      display: inline-block;
+      top: 30px;
+      line-height: 40px;
+
+      @include range-width(0, 450px) {
+        display: inline-block;
+        width: 100%;
+        top: 0;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: $main-color;
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+
+  ul {
+    ul {
+      display: none;
+      position: absolute;
+      top: 10px;
+
+      @include range-width(0, 450px) {
+        position: inherit;
+        width: 100%;
+      }
+    }
+
+    li:hover > ul {
+      display: inherit;
+    }
+
+    ul {
+      li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+        background-color: $sec-color;
+        line-height: 40px;
+
+        @include range-width(0, 450px) {
+          width: 100%;
+        }
+
+        a {
+          &:hover, &:active {
+            background-color: $main-color;
+            color: white;
+          }
+        }
+      }
+
+      ul li {
+        position: relative;
+        top: -60px;
+        left: 170px;
+        @include range-width(0, 450px) {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+li > a {
+  &:after {
+    content: ' +';
+  }
+
+  &:only-child:after {
+    content: '';
+  }
 }
