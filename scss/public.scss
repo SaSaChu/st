@@ -59,11 +59,33 @@ button {
   height: 500px;
 }
 
+.mob-open {
+  display: none;
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+}
+
+.mob-close {
+  @include range-width(0, 450px) {
+    display: none;
+  }
+}
+
+.text-center2 {
+  @include range-width(0, 450px) {
+    text-align: center !important;
+  }
+}
 
 .bigBoxs {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+
+  &.b-height {
+    height: 100%;
+  }
 }
 
 .reserveBoxs {
@@ -77,12 +99,31 @@ button {
   background-size: cover;
 }
 
+.banner-bg {
+  width: 100%;
+  max-height: 325px;
+  overflow: hidden;
+  background-image: url(../images/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   display: inline-block;
   width: 100%;
   background-color: $main-color;
 }
 
+.brown-boxs {
+  display: inline-block;
+  border-top: 2px solid $main-color;
+  border-bottom: 2px solid $main-color;
+  padding: 10px;
+}
+
+.borderB {
+  border-bottom: 2px solid $main-color;
+}
 
 // link
 .link-a {
@@ -107,6 +148,13 @@ header {
   }
 }
 
+.btn-m-menu {
+  display: inline-block;
+  color: white;
+  background-color: $main-color;
+  padding: 8px 13px;
+}
+
 .btn-o {
   display: inline-block;
   @include border-radius(3px);
@@ -120,7 +168,140 @@ header {
     background-color: $orange-color;
     color: white;
   }
+
+  &.btn-o-100 {
+    @include range-width(0, 450px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
+
+.btn-fb {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #356fdb;
+}
+
+.footer-link {
+  display: inline-block;
+  color: #433E3B; 
+  font-size: 1.1rem;
+
+  &:before {
+    content: '・';
+  }
+
+  &:hover {
+    color: $orange-color;
+  }
+}
+
+
+
+// font
+.te-6 {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-left: 63px;
+  color: white;
+  letter-spacing: 5px;
+
+  @include range-width(0, 450px) {
+    letter-spacing: 0;
+  }
+}
+
+.foter-text {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 23px;
+
+  > a {
+    color: #433E3B; 
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+}
+
+
+
+// boo
+.flex-column-mob {
+  @include range-width(0, 450px) {
+    flex-direction: column !important;
+  }
+}
+
+.offcanvas-end {
+  width: 300px !important;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid $main-color;
+}
+
+.offcanvas-body {
+  padding: 0 !important;
+}
+
+.card {
+  border: 0 !important;
+  @include border-radius(5px);
+}
+
+.card-title {
+  font-size: 1.5rem !important;
+  height: 60px;
+  color: #433E3B !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+  &:hover {
+    color: $orange-color !important;
+  }
+}
+
+.card-text {
+  color: #8c8c8c;
+  font-size: 1.1rem !important;
+  height: 65px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-link {
+  color: $main-color !important;
+  font-size: 1.2rem;
+  font-weight: bolder;
+
+  &:hover, &:active {
+    color: $orange-color !important;
+  }
+}
+
+.card-body {
+  border-top: 1px solid rgba(140, 140, 140, .5) !important; 
+}
+
+
+
 
 
 // space
@@ -128,11 +309,48 @@ header {
   padding-top: 95px;
 }
 
+.top115 {
+  padding-top: 115px;
+}
+
+
+.top70 {
+  padding-top: 70px;
+}
+
+.px100 {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @include range-width(0, 450px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.py20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mt85 {
+  margin-top: 85px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+
 
 // menu多層選單
 nav {
   font-size: 1.2rem;
   color: $main-color;
+
+  &.mobile-nav {
+    font-size: 1.3rem;
+  }
 
   ul {
     padding: 0;
@@ -149,6 +367,11 @@ nav {
         display: inline-block;
         width: 100%;
         top: 0;
+        line-height: 50px;
+      }
+
+      &.mobil-nav-li {
+        border-bottom: 1px dotted $main-color;
       }
     }
   }
@@ -173,6 +396,7 @@ nav {
       @include range-width(0, 450px) {
         position: inherit;
         width: 100%;
+        top: 0;
       }
     }
 
@@ -214,6 +438,16 @@ nav {
   }
 }
 
+.mobile-left-2 {
+  padding-left: 17px;
+  border-bottom: 1px dotted #fff;
+}
+
+.mobile-left-3 {
+  padding-left: 25px;
+  border-bottom: 1px dotted #fff;
+}
+
 li > a {
   &:after {
     content: ' +';
@@ -223,3 +457,45 @@ li > a {
     content: '';
   }
 }
+
+
+
+// 分頁
+.pageBoxs {
+  display: inline-block;
+  margin: 0 auto;
+
+  .page-num {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    @include border-radius(20px);
+    border: 1px solid $main-color;
+    color: $main-color;
+    text-align: center;
+    line-height: 37px;
+    font-size: 1.2rem;
+
+    &:hover, &.page-ac {
+      color: #fff;
+      background-color: $main-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
