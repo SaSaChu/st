@@ -40,6 +40,10 @@ body {
 a {
   text-decoration: none !important;
 
+  &:after, &:before {
+    vertical-align: top !important;
+  }
+
   &:hover {
     text-decoration: underline;
   }
@@ -50,6 +54,11 @@ button {
   border-width: 0;
 }
 
+.color-main {color: $main-color;}
+.color-sec {color: $sec-color;}
+.color-link {color: $link-color;}
+.color-orange {color: $orange-color;}
+
 .bg-main {background-color: $main-color;}
 .bg-sec {background-color: $sec-color;}
 .bg-link {background-color: $link-color;}
@@ -59,15 +68,27 @@ button {
   height: 500px;
 }
 
+.banner-title {
+  height: 325px;
+
+  @include range-width(450px, 770px) {
+    height: 270px;
+  }
+
+  @include range-width(0, 450px) {
+    height: 90px;
+  }
+}
+
 .mob-open {
   display: none;
-  @include range-width(0, 450px) {
+  @include range-width(0, 770px) {
     display: inline-block;
   }
 }
 
 .mob-close {
-  @include range-width(0, 450px) {
+  @include range-width(0, 770px) {
     display: none;
   }
 }
@@ -76,6 +97,13 @@ button {
   @include range-width(0, 450px) {
     text-align: center !important;
   }
+}
+
+.borderBoxs {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid $main-color;
+  border-top: 2px solid $main-color;
 }
 
 .bigBoxs {
@@ -102,7 +130,7 @@ button {
 .banner-bg {
   width: 100%;
   max-height: 325px;
-  overflow: hidden;
+  // overflow: hidden;
   background-image: url(../images/banner-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,11 +153,95 @@ header {
   border-bottom: 2px solid $main-color;
 }
 
+
+
+// postion
+.kv01 {
+  top: 0;
+  right: 0;
+
+  @include range-width(0, 450px) {
+    top: 3;
+  }
+}
+
+.kv02 {
+  top: 23px;
+  right: 8px;
+  z-index: 2;
+
+  @include range-width(0, 450px) {
+    top: 9px;
+    right: 3px;
+  }
+
+}
+
+
 // link
+.bread {
+  display: inline-block;
+  font-size: 1rem;
+  color: $main-color;
+  vertical-align: top;
+
+  &:hover {
+    color: $orange-color;
+  }
+
+  &:after {
+    display: inline-block;
+    content: "\F285";
+    font-family: 'bootstrap-icons';
+    color: $main-color;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    vertical-align: top;
+  }
+}
+
+.bread2 {
+  display: inline-block;
+  font-size: 1rem;
+  color: rgba(140, 140, 140, 1.00);
+
+  &:hover {
+    color: $orange-color;
+  }
+
+  &:after {
+    vertical-align: top;
+    display: inline-block;
+    content: "\F285";
+    font-family: 'bootstrap-icons';
+    color: $main-color;
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+}
+
+
 .link-a {
   color: white;
   &:hover, &:active {
     color: $orange-color;
+  }
+}
+
+.btn-brown {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(3px);
+  background-color: $sec-color;
+  color: $main-color;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+
+  &:hover, &.brownAc {
+    background-color: $main-color;
+    color: white;
   }
 }
 
@@ -231,9 +343,49 @@ header {
   }
 }
 
+.kv-title {
+  display: inline-block;
+  font-size: 4rem;
+
+  @include range-width(0, 450px) {
+    font-size: 1.8rem;
+  }
+}
+
+.nd-type {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.nd-title {
+  font-size: 2.5rem;
+
+  @include range-width(0, 450px) {
+    font-size: 2rem;
+
+    &:before {
+      height: 35px;
+    }
+  }
+
+  &:before {
+    display: inline-block;
+    content: '';
+    width: 5px;
+    margin-right: 5px;
+    height: 46px;
+    vertical-align: top;
+    background-color: $orange-color;
+  }
+}
 
 
 // boo
+.form-select {
+  color: $main-color !important;
+  border: 1px solid $main-color !important;
+}
+
 .flex-column-mob {
   @include range-width(0, 450px) {
     flex-direction: column !important;
@@ -294,12 +446,27 @@ header {
   &:hover, &:active {
     color: $orange-color !important;
   }
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: $main-color;
+    color: white !important;
+    @include border-radius(3px);
+    padding: 2px 0;
+    margin-top: 3px;
+
+    &:hover {
+      background-color: $orange-color;
+    }
+  }
 }
 
-.card-body {
-  border-top: 1px solid rgba(140, 140, 140, .5) !important; 
+.card-footer {
+  padding: 1rem;
+  background-color: white !important;
 }
-
 
 
 
@@ -357,6 +524,7 @@ nav {
     margin: 0;
     list-style: none;
     position: relative;
+    z-index: 3;
 
     li {
       display: inline-block;
@@ -420,7 +588,7 @@ nav {
         a {
           &:hover, &:active {
             background-color: $main-color;
-            color: white;
+            color: white !important;
           }
         }
       }
