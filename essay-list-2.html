@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+	<meta http-equiv="Content-Language" content="zh-tw">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+	<title>天主教若瑟醫療財團法人若瑟醫院 - 舐犢情深</title>
+
+	<script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/public.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/25b2931f6f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<header>
+		<div class="bigBoxs">
+			<div class="d-flex text-white">
+				<div class="p-2 flex-grow-1 ">
+					<span class="pe-3 mob-close"><i class="icon-phone pe-2"></i>(05) 700-2656</span>
+					<a class="link-a mob-close" href="mailto:st-obs@mail.stjoho.org.tw"><i
+							class="icon-mail_outline pe-2"></i>st-obs@mail.stjoho.org.tw</a>
+				</div>
+				<div class="px-3 mob-close">
+					<a class="link-a"
+						href="https://www.facebook.com/people/%E8%99%8E%E5%B0%BE%E8%8B%A5%E7%91%9F%E7%94%A2%E5%BE%8C%E8%AD%B7%E7%90%86%E4%B9%8B%E5%AE%B6/100063928514038/"
+						target="_blank"><i class="icon-social-facebook fs-4 pe-2"></i></a>
+					<a class="link-a" href=""><i class="icon-line"></i></a>
+				</div>
+				<div class="p-2 bg-orange text-white mob-close"><i class="icon-access_time pe-2"></i>營業時間：週一 ~ 週日
+					09:00-18:00</div>
+			</div>
+		</div>
+
+		<div class="bg-white">
+			<div class="bigBoxs">
+				<div class="container-fluid">
+					<div class="row py-3 align-items-center">
+						<div class="col-xl-3 col-lg-12 col-6"><img src="images/logo.svg" class="img-fluid"></div>
+
+						<!-- mobile menu -->
+						<div class="col-sm-5 col-4 mob-open"><a class="btn-o-line float-end px-3">預約參觀</a></div>
+						<div class="col-sm-1 col-2 mob-open">
+							<button class="btn btn-m-menu" type="button" data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+								<i class="icon-menu fs-4"></i>
+							</button>
+
+							<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+								aria-labelledby="offcanvasRightLabel">
+								<div class="offcanvas-header">
+									<div class="row">
+										<div class="col-7" id="offcanvasRightLabel"><img src="images/logo.svg"
+												class="img-fluid"></div>
+										<div class="col-5">
+											<button class="btn btn-m-menu float-end" type="button"
+												data-bs-dismiss="offcanvas" aria-label="Close">
+												<i class="icon-x fs-4"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="offcanvas-body">
+									<nav class="d-flex mobile-nav borderB">
+										<ul>
+											<li class="mobil-nav-li">
+												<a>最新消息</a>
+												<ul>
+													<li><a href="03000.html">準父母教室</a></li>
+													<li><a href="03010.html">活動訊息</a></li>
+												</ul>
+											</li>
+
+											<li class="mobil-nav-li">
+												<a>產後護理之家</a>
+												<ul>
+													<li><a href="images/pdf.pdf" target="_blank">新手爸媽必看</a></li>
+													<li>
+														<a>影片專區</a>
+														<ul>
+															<li class="mobile-left-2"><a href="04010.html">總介紹篇</a></li>
+															<li class="mobile-left-2"><a href="04010.html">醫療團隊與產婦篇</a>
+															</li>
+															<li class="mobile-left-2"><a href="04010.html">月子餐篇</a></li>
+															<li class="mobile-left-2"><a href="04010.html">環境與安全消防篇</a>
+															</li>
+															<li class="mobile-left-2"><a href="04010.html">感染管制篇</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+
+											<li class="mobil-nav-li">
+												<a>營 養</a>
+												<ul>
+													<li><a href="#">營養諮詢查詢</a></li>
+													<li><a href="05000.html">月子餐</a></li>
+													<li>
+														<a>生命期營養</a>
+														<ul>
+															<li class="mobile-left-2"><a href="05010.html">孕前營養</a></li>
+															<li class="mobile-left-2"><a href="05010.html">孕後哺乳營養</a>
+															</li>
+															<li class="mobile-left-2"><a href="05010.html">早產兒營養</a>
+															</li>
+															<li class="mobile-left-2"><a href="05010.html">新生兒0-1歲營養</a>
+															</li>
+															<li class="mobile-left-2"><a href="05010.html">幼兒1-3歲營養</a>
+															</li>
+															<li class="mobile-left-2"><a href="05010.html">幼兒4-6歲營養</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a>營養品介紹</a>
+														<ul>
+															<li class="mobile-left-2"><a href="05070.html">懷孕期營養品</a>
+															</li>
+															<li class="mobile-left-2"><a href="05070.html">哺乳期營養品</a>
+															</li>
+															<li class="mobile-left-2"><a href="05070.html">早產兒營養品</a>
+															</li>
+															<li class="mobile-left-2"><a
+																	href="05070.html">新生兒0-1歲營養品</a></li>
+															<li class="mobile-left-2"><a href="05070.html">幼兒1-3歲營養</a>
+															</li>
+															<li class="mobile-left-2"><a href="05070.html">幼兒4-6歲營養</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+
+											<li class="mobil-nav-li">
+												<a>產檢專區</a>
+												<ul>
+													<li><a href="06000.html">產檢好處</a></li>
+													<li><a href="06000.html">公費產前檢</a></li>
+													<li><a href="06000.html">自費產檢</a></li>
+												</ul>
+											</li>
+
+											<li class="mobil-nav-li"><a href="01000.html">母嬰用品櫥窗</a></li>
+											<li class="mobil-nav-li"><a href="02000.html">母嬰親善</a>
+
+											<li class="mobil-nav-li">
+												<a>更多資訊</a>
+												<ul>
+													<li>
+														<a>孕期大小事</a>
+														<ul>
+															<li class="mobile-left-2">
+																<a>孕期三階段</a>
+																<ul>
+																	<li class="mobile-left-3"><a
+																			href="07000.html">第一孕期(未滿17週)</a></li>
+																	<li class="mobile-left-3"><a
+																			href="07000.html">第二孕期(17週未滿29週) </a></li>
+																	<li class="mobile-left-3"><a
+																			href="07000.html">第三孕期(29週以上)</a></li>
+																</ul>
+															</li>
+															<li class="mobile-left-2"><a
+																	href="07030.html">孕期檢查與高危險性妊娠篩檢</a></li>
+															<li class="mobile-left-2"><a href="07030.html">孕期身體變化</a>
+															</li>
+															<li class="mobile-left-2"><a href="07030.html">孕期營養與運動</a>
+															</li>
+															<li class="mobile-left-2"><a href="07030.html">孕期生活注意事項</a>
+															</li>
+															<li class="mobile-left-2"><a href="07030.html">孕期心理健康</a>
+															</li>
+															<li class="mobile-left-2"><a href="07030.html">多胞胎妊娠注意事項</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a>生產計畫</a>
+														<ul>
+															<li class="mobile-left-2"><a href="07090.html">生產準備與注意事項</a>
+															</li>
+															<li class="mobile-left-2"><a href="07090.html">生產方式</a></li>
+															<li class="mobile-left-2"><a href="07090.html">生產徵兆</a></li>
+															<li class="mobile-left-2"><a
+																	href="07090.html">孕婦產前必看!甚麼是拉梅茲呼吸法</a></li>
+															<li class="mobile-left-2"><a href="07090.html">生產球運動</a>
+															</li>
+															<li class="mobile-left-2"><a href="07090.html">母嬰早期肌膚接觸</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a>產後照護</a>
+														<ul>
+															<li class="mobile-left-2"><a
+																	href="07090.html">產後身體變化與自我照顧</a></li>
+															<li class="mobile-left-2"><a href="07090.html">產後憂鬱</a></li>
+															<li class="mobile-left-2"><a
+																	href="07090.html">親子同室，享受為人母的幸福</a></li>
+															<li class="mobile-left-2">
+																<a>母乳哺育</a>
+																<ul>
+																	<li class="mobile-left-3"><a
+																			href="07180.html">母乳好處</a></li>
+																	<li class="mobile-left-3"><a
+																			href="07180.html">成功哺餵方法及技巧</a></li>
+																	<li class="mobile-left-3"><a
+																			href="07180.html">如何促進乳汁分泌及問題處理</a></li>
+																	<li class="mobile-left-3"><a
+																			href="07180.html">寶寶注意事項</a></li>
+																	<li class="mobile-left-3"><a
+																			href="07180.html">媽媽注意事項</a></li>
+																	<li class="mobile-left-3"><a
+																			href="07180.html">哺乳注意事項</a></li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a>新生兒</a>
+														<ul>
+															<li class="mobile-left-2"><a
+																	href="07240.html">新生兒軟綿綿，這樣抱最安全!</a></li>
+															<li class="mobile-left-2"><a
+																	href="07240.html">幫新生兒洗澡這樣做就對了！</a></li>
+															<li class="mobile-left-2"><a href="07240.html">新生兒臍帶護理 </a>
+															</li>
+															<li class="mobile-left-2"><a href="07240.html">寶寶哭鬧如何安撫</a>
+															</li>
+															<li class="mobile-left-2"><a href="07240.html">寶寶的睡眠習慣 </a>
+															</li>
+															<li class="mobile-left-2"><a
+																	href="07240.html">營造安全睡眠環境-預防嬰兒猝死症</a></li>
+															<li class="mobile-left-2"><a href="07240.html">觀察寶寶的大便顏色</a>
+															</li>
+															<li class="mobile-left-2"><a
+																	href="07240.html">用包巾包住寶寶，他才不會「驚到」？</a></li>
+															<li class="mobile-left-2"><a href="07240.html">新生兒篩檢</a>
+															</li>
+															<li class="mobile-left-2"><a href="07240.html">新生兒疾病照護 </a>
+															</li>
+															<li class="mobile-left-2"><a href="07240.html">營養、運動</a>
+															</li>
+															<li class="mobile-left-2"><a href="07240.html">生長發育</a></li>
+														</ul>
+													</li>
+													<li><a href="07360.html">早產兒</a></li>
+													<li>
+														<a>嬰幼兒~兒童</a>
+														<ul>
+															<li class="mobile-left-2"><a href="07370.html">預防注射</a></li>
+															<li class="mobile-left-2"><a href="07370.html">生活注意事項</a>
+															</li>
+															<li class="mobile-left-2"><a href="07370.html">生長發育</a></li>
+															<li class="mobile-left-2"><a href="07370.html">營養、運動</a>
+															</li>
+															<li class="mobile-left-2"><a href="07370.html">嬰幼兒疾病照護</a>
+															</li>
+															<li class="mobile-left-2"><a href="07370.html">雙(多)胞胎照顧</a>
+															</li>
+															<li class="mobile-left-2"><a href="07370.html">口腔保健</a></li>
+															<li class="mobile-left-2"><a href="07370.html">視力保健</a></li>
+															<li class="mobile-left-2"><a href="07370.html">親子共讀</a></li>
+															<li class="mobile-left-2"><a href="07370.html">事故傷害預防</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+
+											<li class="mobil-nav-li">
+												<a href="#">網路掛號</a>
+												<ul>
+													<li><a href="#">看診進度</a></li>
+													<li><a href="#">約診日期查詢</a></li>
+													<li>
+														<a href="#">預約掛號</a>
+														<ul>
+															<li class="mobile-left-2"><a href="#">婦產部</a></li>
+															<li class="mobile-left-2"><a href="#">兒科部</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">醫師介紹</a>
+														<ul>
+															<li class="mobile-left-2"><a href="#">婦產部</a></li>
+															<li class="mobile-left-2"><a href="#">兒科部</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+
+									<div class="p-4"><a class="btn btn-fb text-center"
+											href="https://www.facebook.com/people/%E8%99%8E%E5%B0%BE%E8%8B%A5%E7%91%9F%E7%94%A2%E5%BE%8C%E8%AD%B7%E7%90%86%E4%B9%8B%E5%AE%B6/100063928514038/"
+											target="_blank">舐犢情深粉絲團</a></div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- web menu -->
+						<div class="col-xl-7 col-lg-10 mob-close">
+							<nav class="d-flex justify-content-center">
+								<ul>
+									<li>
+										<a>最新消息</a>
+										<ul>
+											<li><a href="03000.html">準父母教室</a></li>
+											<li><a href="03010.html">活動訊息</a></li>
+										</ul>
+									</li>
+
+									<li>
+										<a>產後護理之家</a>
+										<ul>
+											<li><a href="images/pdf.pdf" target="_blank">新手爸媽必看</a></li>
+											<li>
+												<a href="04010.html">影片專區</a>
+												<!-- <ul>
+                            <li><a href="#">總介紹篇</a></li>
+                            <li><a href="#">醫療團隊與產婦篇</a></li>
+                            <li><a href="#">月子餐篇</a></li>
+                            <li><a href="#">環境與安全消防篇</a></li>
+                            <li><a href="#">感染管制篇</a></li>
+                          </ul> -->
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<a>營 養</a>
+										<ul>
+											<li><a href="#">營養諮詢查詢</a></li>
+											<li><a href="05000.html">月子餐</a></li>
+											<li>
+												<a href="05010.html">生命期營養</a>
+												<!-- <ul>
+                            <li><a href="#">孕前營養</a></li>
+                            <li><a href="#">孕後哺乳營養</a></li>
+                            <li><a href="#">早產兒營養</a></li>
+                            <li><a href="#">新生兒0-1歲營養</a></li>
+                            <li><a href="#">幼兒1-3歲營養</a></li>
+                            <li><a href="#">幼兒4-6歲營養</a></li>
+                          </ul> -->
+											</li>
+											<li>
+												<a href="05070.html">營養品介紹</a>
+												<!-- <ul>
+                            <li><a href="#">懷孕期營養品</a></li>
+                            <li><a href="#">哺乳期營養品</a></li>
+                            <li><a href="#">早產兒營養品</a></li>
+                            <li><a href="#">新生兒0-1歲營養品</a></li>
+                            <li><a href="#">幼兒1-3歲營養</a></li>
+                            <li><a href="#">幼兒4-6歲營養</a></li>
+                          </ul> -->
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<a>產檢專區</a>
+										<ul>
+											<li><a href="06000.html">產檢好處</a></li>
+											<li><a href="06000.html">公費產前檢</a></li>
+											<li><a href="06000.html">自費產檢</a></li>
+										</ul>
+									</li>
+
+									<li>
+										<a>更多資訊</a>
+										<ul>
+											<li><a href="01000.html">母嬰用品櫥窗</a></li>
+											<li><a href="02000.html">母嬰親善</a>
+											<li>
+												<a href="07000.html">孕期大小事</a>
+												<!-- <ul>
+                            <li>
+                              <a href="#">孕期三階段</a>
+                              <ul>
+                                <li><a href="#">第一孕期(未滿17週)</a></li>
+                                <li><a href="#">第二孕期(17週未滿29週) </a></li>
+                                <li><a href="#">第三孕期(29週以上)</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">孕期檢查與高危險性妊娠篩檢 </a></li>
+                            <li><a href="#">孕期身體變化</a></li>
+                            <li><a href="#">孕期營養與運動</a></li>
+                            <li><a href="#">孕期生活注意事項</a></li>
+                            <li><a href="#">孕期心理健康</a></li>
+                            <li><a href="#">多胞胎妊娠注意事項</a></li>
+                          </ul> -->
+											</li>
+											<li>
+												<a href="07090.html">生產計畫</a>
+												<!-- <ul>
+                            <li><a href="#">生產準備與注意事項</a></li>
+                            <li><a href="#">生產方式</a></li>
+                            <li><a href="#">生產徵兆</a></li>
+                            <li><a href="#">孕婦產前必看!甚麼是拉梅茲呼吸法</a></li>
+                            <li><a href="#">生產球運動</a></li>
+                            <li><a href="#">母嬰早期肌膚接觸</a></li>
+                          </ul> -->
+											</li>
+											<li>
+												<a href="07180.html">產後照護</a>
+												<!-- <ul>
+                            <li><a href="#">產後身體變化與自我照顧</a></li>
+                            <li><a href="#">產後憂鬱</a></li>
+                            <li><a href="#">親子同室，享受為人母的幸福</a></li>
+                            <li>
+                              <a href="#">母乳哺育</a>
+                              <ul>
+                                <li><a href="#">成功哺餵方法及技巧</a></li>
+                                <li><a href="#">如何促進乳汁分泌及問題處理</a></li>
+                                <li><a href="#">寶寶注意事項</a></li>
+                                <li><a href="#">媽媽注意事項</a></li>
+                                <li><a href="#">哺乳注意事項</a></li>
+                              </ul>
+                            </li>
+                          </ul> -->
+											</li>
+											<li>
+												<a href="07240.html">新生兒</a>
+												<!-- <ul>
+                            <li><a href="#">新生兒軟綿綿，這樣抱最安全!</a></li>
+                            <li><a href="#">幫新生兒洗澡這樣做就對了！</a></li>
+                            <li><a href="#">新生兒臍帶護理 </a></li>
+                            <li><a href="#">寶寶哭鬧如何安撫</a></li>
+                            <li><a href="#">寶寶的睡眠習慣 </a></li>
+                            <li><a href="#">營造安全睡眠環境-預防嬰兒猝死症</a></li>
+                            <li><a href="#">觀察寶寶的大便顏色</a></li>
+                            <li><a href="#">用包巾包住寶寶，他才不會「驚到」？</a></li>
+                            <li><a href="#">新生兒篩檢</a></li>
+                            <li><a href="#">新生兒疾病照護 </a></li>
+                            <li><a href="#">營養、運動</a></li>
+                            <li><a href="#">生長發育</a></li>
+                          </ul> -->
+											</li>
+											<li><a href="07360.html">早產兒</a></li>
+											<li>
+												<a href="07370.html">嬰幼兒~兒童</a>
+												<!-- <ul>
+                            <li><a href="#">預防注射</a></li>
+                            <li><a href="#">生活注意事項</a></li>
+                            <li><a href="#">生長發育</a></li>
+                            <li><a href="#">營養、運動</a></li>
+                            <li><a href="#">嬰幼兒疾病照護</a></li>
+                            <li><a href="#">雙(多)胞胎照顧</a></li>
+                            <li><a href="#">口腔保健</a></li>
+                            <li><a href="#">視力保健</a></li>
+                            <li><a href="#">親子共讀</a></li>
+                            <li><a href="#">事故傷害預防</a></li>
+                          </ul> -->
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<a href="#">網路掛號</a>
+										<ul>
+											<li><a href="#">看診進度</a></li>
+											<li><a href="#">約診日期查詢</a></li>
+											<li>
+												<a href="#">預約掛號</a>
+												<!-- <ul>
+                            <li><a href="#">婦產部</a></li>
+                            <li><a href="#">兒科部</a></li>
+                          </ul> -->
+											</li>
+											<li>
+												<a href="#">醫師介紹</a>
+												<!--  <ul>
+                            <li><a href="#">婦產部</a></li>
+                            <li><a href="#">兒科部</a></li>
+                          </ul> -->
+											</li>
+										</ul>
+									</li>
+
+
+								</ul>
+							</nav>
+						</div>
+						<div class="col-2 mob-close"><a class="btn-o-line float-end px-5">預約參觀</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="banner-bg">
+		<div class="bigBoxs">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-6 col-5">
+						<div class="d-flex flex-column justify-content-center banner-title">
+							<div class="kv-title">營養</div>
+							<!-- web Breadcrumb -->
+							<div class="p-2 mob-close">
+								<i class="bi bi-house-door-fill color-orange pe-2"></i>
+								<a href="" class="bread">營養</a>
+								<span>生命期營養</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-7">
+						<div class="position-relative">
+							<img src="images/kv.png" class="img-fluid position-absolute kv02">
+							<img src="images/kv-bg.png" class="img-fluid position-absolute kv01">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bigBoxs b-height pt-5">
+		<div class="container-fluid">
+			<!-- mobile Breadcrumb -->
+			<div class="p-2 mob-open">
+				<i class="icon-home pe-2 color-orange"></i>
+				<a href="" class="bread">營養</a>
+				<span>生命期營養</span>
+			</div>
+
+			<!-- 下拉選單 -->
+			<select id="main-select" class="form-select form-select-lg mb-3 mob-open"
+				aria-label=".form-select-lg example">
+				<option selected>生命期營養</option>
+			</select>
+
+			<select id="subItem-select" class="form-select form-select-lg mb-3 mob-open"
+				aria-label=".form-select-lg example">
+				<option selected>孕前營養</option>
+				<option value="1">孕前營養</option>
+				<option value="1">孕後哺乳營養</option>
+				<option value="1">早產兒營養</option>
+				<option value="1">新生兒0-1歲營養</option>
+				<option value="1">幼兒1-3歲營養</option>
+				<option value="1">幼兒4-6歲營養</option>
+			</select>
+
+			<div class="row">
+				<!-- web 類別 -->
+				<div class="col-md-4 mob-close">
+					<div class="px-2  borderBoxs">
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<a href="05000.html" class="accordion-button essayAc no-a">月子餐</a>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseTwo" aria-expanded="false"
+										aria-controls="flush-collapseTwo">
+										生命期營養
+									</button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<a href="05010.html" class="essay-menu">孕前營養</a>
+										<a href="05010.html" class="essay-menu">孕後哺乳營養</a>
+										<a href="05010.html" class="essay-menu">早產兒營養</a>
+										<a href="05010.html" class="essay-menu">新生兒0-1歲營養</a>
+										<a href="05010.html" class="essay-menu">幼兒1-3歲營養</a>
+										<a href="05010.html" class="essay-menu">幼兒4-6歲營養</a>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree" aria-expanded="false"
+										aria-controls="flush-collapseThree">
+										營養品介紹
+									</button>
+								</h2>
+								<div id="flush-collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<a href="05070.html" class="essay-menu">懷孕期營養品</a>
+										<a href="05070.html" class="essay-menu">哺乳期營養品</a>
+										<a href="05070.html" class="essay-menu">早產兒營養品</a>
+										<a href="05070.html" class="essay-menu">新生兒0-1歲營養品</a>
+										<a href="05070.html" class="essay-menu">幼兒1-3歲營養品</a>
+										<a href="05070.html" class="essay-menu">幼兒4-6歲營養品</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 文章list -->
+				<div class="col-md-8 col-12">
+					<div class="pb-3 mob-close">
+						<i class="bi bi-circle-fill color-orange pe-2"></i>
+						<a href="03000.html" class="bread2">營養</a>
+						<span>月子餐</span>
+					</div>
+
+					<div class="card mb-5">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/pic01.png" class="img-fluid">
+							</div>
+							<div class="col-8 pb-xl-0 pb-3 pb-xl-0 pb-3">
+								<div class="card-body">
+									<a href='news_detail.html' class="card-title2">愛自己，不需要將就愛自己，不需要將就愛自己</a>
+									<p class="card-text2 mt-2 mb-0">
+										不同的列車都在開往更好的地方，我們的祝福也會一路相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的日子裡保持想念
+									</p>
+								</div>
+								<div class="card-footer">
+									<span><i class="icon-access_time pe-2"></i>2023.02.21</span>
+									<a href="05000-d.html" class="card-link float-end">+ Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/pic02.png" class="img-fluid">
+							</div>
+							<div class="col-8 pb-xl-0 pb-3">
+								<div class="card-body">
+									<a href='news_detail.html'
+										class="card-title2">愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就</a>
+									<p class="card-text2 mt-2 mb-0">
+										不同的列車都在開往更好的地方，我們的祝福也會一路相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的日子裡保持想念
+									</p>
+								</div>
+								<div class="card-footer">
+									<span><i class="icon-access_time pe-2"></i>2023.02.21</span>
+									<a href="05000-d.html" class="card-link float-end">+ Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/pic03.png" class="img-fluid">
+							</div>
+							<div class="col-8 pb-xl-0 pb-3">
+								<div class="card-body">
+									<a href='news_detail.html'
+										class="card-title2">愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就</a>
+									<p class="card-text2 mt-2 mb-0">
+										不同的列車都在開往更好的地方，我們的祝福也會一路相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的日子裡保持想念
+									</p>
+								</div>
+								<div class="card-footer">
+									<span><i class="icon-access_time pe-2"></i>2023.02.21</span>
+									<a href="05000-d.html" class="card-link float-end">+ Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/pic01.png" class="img-fluid">
+							</div>
+							<div class="col-8 pb-xl-0 pb-3">
+								<div class="card-body">
+									<a href='news_detail.html'
+										class="card-title2">愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就</a>
+									<p class="card-text2 mt-2 mb-0">
+										不同的列車都在開往更好的地方，我們的祝福也會一路相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的日子裡保持想念
+									</p>
+								</div>
+								<div class="card-footer">
+									<span><i class="icon-access_time pe-2"></i>2023.02.21</span>
+									<a href="05000-d.html" class="card-link float-end">+ Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/pic02.png" class="img-fluid">
+							</div>
+							<div class="col-8 pb-xl-0 pb-3">
+								<div class="card-body">
+									<a href='news_detail.html'
+										class="card-title2">愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就</a>
+									<p class="card-text2 mt-2 mb-0">
+										不同的列車都在開往更好的地方，我們的祝福也會一路相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的日子裡保持想念
+									</p>
+								</div>
+								<div class="card-footer">
+									<span><i class="icon-access_time pe-2"></i>2023.02.21</span>
+									<a href="05000-d.html" class="card-link float-end">+ Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-5">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/pic03.png" class="img-fluid">
+							</div>
+							<div class="col-8 pb-xl-0 pb-3">
+								<div class="card-body">
+									<a href='news_detail.html'
+										class="card-title2">愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就愛自己，不需要將就</a>
+									<p class="card-text2 mt-2 mb-0">
+										不同的列車都在開往更好的地方，我們的祝福也會一路相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的相伴而我們也會在每一個看不到妳們的日子裡保持想念
+									</p>
+								</div>
+								<div class="card-footer">
+									<span><i class="icon-access_time pe-2"></i>2023.02.21</span>
+									<a href="05000-d.html" class="card-link float-end">+ Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- 分頁 -->
+			<div class="pageBoxs d-flex justify-content-center justify-content-md-end mt-xl-5 mt-4">
+				<a class='page-num' href=""><img src="images/left_page.svg"></a>
+				<a class='page-num page-ac' href="">1</a>
+				<a class='page-num' href="">2</a>
+				<a class='page-num' href="">3</a>
+				<a class='page-num' href="">...</a>
+				<a class='page-num' href="">10</a>
+				<a class='page-num' href=""><img src="images/right_page.svg"></a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="mt100">
+		<div class="container-fluid bg-white p-3">
+			<div class="bigBoxs position-relative">
+				<div class="bigBoxs position-absolute top-0 start-50 translate-middle reserveBoxs">
+					<div class="container-fluid px100">
+						<div class="d-flex align-items-xl-center flex-column-mob">
+							<div class="p-2 flex-grow-1 ">
+								<p class="text-white h1"><img src="images/date_range.svg" class="pe-3">預約參觀</p>
+								<p class="te-6">歡迎預約參觀若瑟產後護理之家</p>
+							</div>
+							<div class="p-2"><a class="btn-o btn-o-100 float-xl-end px-5">聯絡我們</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid top115 pb-4">
+					<div class="row">
+						<div class="col-xl-3 col-12 pb-xl-0 pb-4 text-center2"><img src="images/footer-logop.png"></div>
+						<div class="col-xl-4 col-12">
+							<p class="fs-4 fw-bold">INFOMATION</p>
+							<div class="brown-boxs me-3">
+								<span class="foter-text"><img src="images/access_time.svg" class="pe-2">營業時間：週一 ~ 週日
+									09:00-18:00</span>
+								<span class="foter-text">TEL：(05) 700-2656</span>
+								<span class="foter-text">ADD：632雲林縣虎尾鎮民權路2號5樓</span>
+								<span class="foter-text">Mail：<a
+										href="mailto:st-obs@mail.stjoho.org.tw">st-obs@mail.stjoho.org.tw</a></span>
+							</div>
+						</div>
+						<div class="col-xl-4 mob-close">
+							<p class="fs-4 fw-bold">NAVIGATION</p>
+							<div class="brown-boxs me-3">
+								<div class="row">
+									<div class="col-4"><a href="03000.html" class='footer-link'>最新消息</a></div>
+									<div class="col-4"><a href="04010.html" class='footer-link'>產後護理之家</a></div>
+									<div class="col-4"><a href="05000.html" class='footer-link'>營養</a></div>
+									<div class="col-4"><a href="01000.html" class='footer-link'>母嬰親善</a></div>
+									<div class="col-4"><a href="02000.html" class='footer-link'>母嬰用品櫥窗</a></div>
+									<div class="col-4"><a href="06000.html" class='footer-link'>產檢專區</a></div>
+									<div class="col-4"><a href="#" class='footer-link'>網路掛號</a></div>
+									<div class="col-4"><a href="#" class='footer-link'>看診進度</a></div>
+									<div class="col-4"><a href="07000.html" class='footer-link'>更多資訊...</a></div>
+									<div class="col-4"><a href="#" class='footer-link'>使用條款</a></div>
+									<div class="col-4"><a href="#" class='footer-link'>免責聲明</a></div>
+									<div class="col-4"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-1 mob-close">
+							<img src="images/qr01.png" class="pb-2">
+							<img src="images/qr02.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="text-center p-4">版權所有 © 2023 天主教若瑟醫療財團法人若瑟醫院 Copyright © St.Joseph's Hospital. All Rights Reserved.
+		</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+		crossorigin="anonymous"></script>
+	<script src="js/select.js">
+
+	</script>
+</body>
+
+</html>
