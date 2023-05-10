@@ -540,20 +540,25 @@
 			</div>
 
 			<!-- 下拉選單 -->
-			<select id="main-select" class="form-select form-select-lg mb-3 mob-open"
+			<!-- 0510 記得加上 id 名稱可自行定義，但 js 裡的也要一併更改  -->
+			<select id="mainItem-select" class="form-select form-select-lg mb-3 mob-open"
 				aria-label=".form-select-lg example">
-				<option selected>生命期營養</option>
+				<!-- 0510 value 值可自行定義，但 js 裡的也要一併更改  -->
+				<option value="1">月子餐</option>
+				<option value="2" selected>生命期營養</option>
+				<option value="3">營養品介紹</option>
 			</select>
 
+			<!-- 0510 記得加上 id 名稱可自行定義，但 js 裡的也要一併更改  -->
 			<select id="subItem-select" class="form-select form-select-lg mb-3 mob-open"
 				aria-label=".form-select-lg example">
-				<option selected>孕前營養</option>
-				<option value="1">孕前營養</option>
-				<option value="1">孕後哺乳營養</option>
-				<option value="1">早產兒營養</option>
-				<option value="1">新生兒0-1歲營養</option>
-				<option value="1">幼兒1-3歲營養</option>
-				<option value="1">幼兒4-6歲營養</option>
+				<!-- 0510 value 值可自行定義，但 js 裡的也要一併更改  -->
+				<option value="05010">孕前營養</option>
+				<option value="05011" selected>孕後哺乳營養</option>
+				<option value="05012">早產兒營養</option>
+				<option value="05013">新生兒0-1歲營養</option>
+				<option value="05014">幼兒1-3歲營養</option>
+				<option value="05015">幼兒4-6歲營養</option>
 			</select>
 
 			<div class="row">
@@ -565,17 +570,23 @@
 								<a href="05000.html" class="accordion-button essayAc no-a">月子餐</a>
 							</div>
 
+
+							<!-- 0510 LeftSideMenu 範例修改前 -->
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="flush-headingTwo">
+									<!-- 1. 下方 button 刪除 class 裡的 collapsed 、 aria-expanded 由 false 改為 true -->
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseTwo" aria-expanded="false"
 										aria-controls="flush-collapseTwo">
 										生命期營養
 									</button>
 								</h2>
+
+								<!-- 0510 2. 下方 <div id="flush-collapseTwo"> class 後加上 show  -->
 								<div id="flush-collapseTwo" class="accordion-collapse collapse"
 									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
+										<!-- 0510 3. 在要 active 的項目加上 class -->
 										<a href="05010.html" class="essay-menu">孕前營養</a>
 										<a href="05010.html" class="essay-menu">孕後哺乳營養</a>
 										<a href="05010.html" class="essay-menu">早產兒營養</a>
@@ -586,19 +597,19 @@
 								</div>
 							</div>
 
-
+							<!-- 0510 LeftSideMenu 範例修改後  -->
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="flush-headingThree">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseThree" aria-expanded="false"
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree" aria-expanded="true"
 										aria-controls="flush-collapseThree">
 										營養品介紹
 									</button>
 								</h2>
-								<div id="flush-collapseThree" class="accordion-collapse collapse"
+								<div id="flush-collapseThree" class="accordion-collapse collapse show"
 									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
-										<a href="05070.html" class="essay-menu">懷孕期營養品</a>
+										<a href="05070.html" class="essay-menu accordion-button essayAc no-a">懷孕期營養品</a>
 										<a href="05070.html" class="essay-menu">哺乳期營養品</a>
 										<a href="05070.html" class="essay-menu">早產兒營養品</a>
 										<a href="05070.html" class="essay-menu">新生兒0-1歲營養品</a>
