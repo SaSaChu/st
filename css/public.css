@@ -3045,7 +3045,7 @@ button { outline: 0; border-width: 0; }
 
 @media screen and (max-width: 769px) and (min-width: 0) { .mob-close { display: none; } }
 
-@media screen and (max-width: 449px) and (min-width: 0) { .text-center2 { text-align: center !important; } }
+@media screen and (max-width: 769px) and (min-width: 0) { .text-center2 { text-align: center !important; } }
 
 .borderBoxs { display: inline-block; width: 100%; border-bottom: 2px solid #B3876C; border-top: 2px solid #B3876C; }
 
@@ -3061,6 +3061,12 @@ header { display: inline-block; width: 100%; background-color: #B3876C; }
 .brown-boxs { display: inline-block; border-top: 2px solid #B3876C; border-bottom: 2px solid #B3876C; padding: 10px; }
 
 .borderB { border-bottom: 2px solid #B3876C; }
+
+.newpic { display: inline-block; width: 100%; height: 260px; overflow: hidden; }
+@media screen and (max-width: 449px) and (min-width: 0) { .newpic { height: 135px; } }
+
+.esspic { width: 100%; height: 185px; overflow: hidden; }
+@media screen and (max-width: 449px) and (min-width: 0) { .esspic { height: 212px; } }
 
 .kv01 { top: 0; right: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .kv01 { top: 3; } }
@@ -3097,8 +3103,11 @@ header { display: inline-block; width: 100%; background-color: #B3876C; }
 .footer-link:before { content: '・'; }
 .footer-link:hover { color: #FF978B; }
 
-.essay-menu { display: inline-block; width: 100%; padding: 1rem 1.25rem; font-size: 1.2rem; color: #b3876c !important; text-align: left; border-bottom: 1px dotted #b3876c; }
+.essay-menu { display: inline-block; width: 100%; padding: 1rem 1.25rem; font-size: 1.2rem; color: #b3876c !important; text-align: left; border-bottom: 1px dotted #b3876c !important; }
 .essay-menu:hover { color: #FF978B !important; }
+
+.ft4 { font-size: 4rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .ft4 { font-size: 3.8rem; } }
 
 .te-6 { display: inline-block; font-size: 1.2rem; font-weight: 300; padding-left: 63px; color: white; letter-spacing: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .te-6 { letter-spacing: 0; } }
@@ -3165,6 +3174,7 @@ header { display: inline-block; width: 100%; background-color: #B3876C; }
 .top70 { padding-top: 70px; }
 
 .px100 { padding-left: 100px; padding-right: 100px; }
+@media screen and (max-width: 769px) and (min-width: 450px) { .px100 { padding-left: 35px; padding-right: 35px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .px100 { padding-left: 0; padding-right: 0; } }
 
 .py20 { padding-top: 20px; padding-bottom: 20px; }
@@ -3172,6 +3182,8 @@ header { display: inline-block; width: 100%; background-color: #B3876C; }
 .mt85 { margin-top: 85px; }
 
 .mt100 { margin-top: 100px; }
+
+@media screen and (max-width: 1024px) and (min-width: 821px) { .hpe { padding-left: 92px; } }
 
 nav { font-size: 1.2rem; color: #B3876C; }
 nav.mobile-nav { font-size: 1.3rem; }

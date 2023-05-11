@@ -74,6 +74,7 @@ $(function () {
 		}
 	];
 
+
 	let items2 = [
 		{
 			code: 1,
@@ -131,6 +132,7 @@ $(function () {
 				}
 			]
 		}, 
+
 		{
 		 	code: 2,
 		 	name: "生產計畫",

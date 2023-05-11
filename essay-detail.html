@@ -251,7 +251,7 @@
 
               <!-- web menu -->
               <div class="col-xl-7 col-lg-10 mob-close">
-                <nav class="d-flex justify-content-center">
+                <nav class="d-flex justify-content-lg-start justify-content-center hpe">
                   <ul>
                     <li>
                       <a>最新消息</a>
@@ -476,21 +476,25 @@
         </div>
 
         <!-- 下拉選單 -->
-        <select class="form-select form-select-lg mb-3 mob-open" aria-label=".form-select-lg example">
-          <option selected>生命期營養</option>
+        <!-- 0510 記得加上 id 名稱可自行定義，但 js 裡的也要一併更改  -->
+        <select id="mainItem-select" class="form-select form-select-lg mb-3 mob-open"
+          aria-label=".form-select-lg example">
+          <!-- 0510 value 值可自行定義，但 js 裡的也要一併更改  -->
           <option value="1">月子餐</option>
-          <option value="1">生命期營養</option>
-          <option value="1">營養品介紹</option>
+          <option value="2" selected>生命期營養</option>
+          <option value="3">營養品介紹</option>
         </select>
 
-        <select class="form-select form-select-lg mb-3 mob-open" aria-label=".form-select-lg example">
-          <option selected>孕前營養</option>
-          <option value="1">孕前營養</option>
-          <option value="1">孕後哺乳營養</option>
-          <option value="1">早產兒營養</option>
-          <option value="1">新生兒0-1歲營養</option>
-          <option value="1">幼兒1-3歲營養</option>
-          <option value="1">幼兒4-6歲營養</option>
+        <!-- 0510 記得加上 id 名稱可自行定義，但 js 裡的也要一併更改  -->
+        <select id="subItem-select" class="form-select form-select-lg mb-3 mob-open"
+          aria-label=".form-select-lg example">
+          <!-- 0510 value 值可自行定義，但 js 裡的也要一併更改  -->
+          <option value="05010">孕前營養</option>
+          <option value="05011" selected>孕後哺乳營養</option>
+          <option value="05012">早產兒營養</option>
+          <option value="05013">新生兒0-1歲營養</option>
+          <option value="05014">幼兒1-3歲營養</option>
+          <option value="05015">幼兒4-6歲營養</option>
         </select>
 
         <div class="row">
@@ -502,14 +506,22 @@
                   <a href="05000.html" class="accordion-button essayAc no-a">月子餐</a>
                 </div>
 
+                <!-- 0510 LeftSideMenu 範例修改前 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <!-- 1. 下方 button 刪除 class 裡的 collapsed 、 aria-expanded 由 false 改為 true -->
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                      aria-controls="flush-collapseTwo">
                       生命期營養
                     </button>
                   </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+
+                  <!-- 0510 2. 下方 <div id="flush-collapseTwo"> class 後加上 show  -->
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
+                      <!-- 0510 3. 在要 active 的項目加上 class -->
                       <a href="05010.html" class="essay-menu">孕前營養</a>
                       <a href="05010.html" class="essay-menu">孕後哺乳營養</a>
                       <a href="05010.html" class="essay-menu">早產兒營養</a>
@@ -520,16 +532,19 @@
                   </div>
                 </div>
 
-                
+                <!-- 0510 LeftSideMenu 範例修改後  -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="true"
+                      aria-controls="flush-collapseThree">
                       營養品介紹
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                      <a href="05070.html" class="essay-menu">懷孕期營養品</a>
+                      <a href="05070.html" class="essay-menu accordion-button essayAc">懷孕期營養品</a>
                       <a href="05070.html" class="essay-menu">哺乳期營養品</a>
                       <a href="05070.html" class="essay-menu">早產兒營養品</a>
                       <a href="05070.html" class="essay-menu">新生兒0-1歲營養品</a>
@@ -619,7 +634,7 @@
               <div class="col-xl-4 col-12">
                 <p class="fs-4 fw-bold">INFOMATION</p>
                 <div class="brown-boxs me-3">
-                  <span class="foter-text"><img src="images/access_time.svg" class="pe-2">營業時間：週一 ~ 週日 09:00-18:00</span>
+                  <span class="foter-text"><i class="bi bi-clock pe-2"></i>營業時間：週一 ~ 週日 09:00-18:00</span>
                   <span class="foter-text">TEL：(05) 700-2656</span>
                   <span class="foter-text">ADD：632雲林縣虎尾鎮民權路2號5樓</span>
                   <span class="foter-text">Mail：<a href="mailto:st-obs@mail.stjoho.org.tw">st-obs@mail.stjoho.org.tw</a></span>

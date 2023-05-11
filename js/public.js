@@ -1,4 +1,5 @@
 $(function () {
-	
+
+	$('.newpic, .esspic').imgLiquid ();
 
 });
