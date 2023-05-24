@@ -1,5 +1,5 @@
 $(function () {
 
-	$('.newpic, .esspic').imgLiquid ();
+	$('.newpic, .esspic, .videopic').imgLiquid ();
 
 });

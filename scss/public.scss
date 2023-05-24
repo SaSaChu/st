@@ -164,6 +164,17 @@ header {
   }
 }
 
+.videopic {
+  display: inline-block;
+  width: 100%;
+  height: 205px;
+  overflow: hidden;
+
+  @include range-width(0, 450px) {
+    height: 135px;
+  }
+}
+
 .esspic {
   width: 100%;
   height: 185px;
