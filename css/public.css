@@ -3102,6 +3102,8 @@ header { display: inline-block; width: 100%; background-color: #B3876C; }
 
 .btn-fb { display: inline-block; width: 100%; padding: 10px; color: white; font-size: 1.2rem; background-color: #356fdb; }
 
+.btn-o-m { display: inline-block; width: 100%; padding: 10px; color: white; font-size: 1.2rem; background-color: #FF978B; }
+
 .footer-link { display: inline-block; color: #433E3B; font-size: 1.1rem; }
 .footer-link:before { content: '・'; }
 .footer-link:hover { color: #FF978B; }
